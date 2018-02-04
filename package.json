@@ -1,0 +1,14 @@
+{
+  "name": "gbdkjs-example-platformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Maltby",
+  "license": "MIT",
+  "dependencies": {
+    "gbdkjs": "^1.0.0"
+  }
+}

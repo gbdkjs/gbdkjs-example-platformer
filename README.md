@@ -4,6 +4,13 @@
 
 ![Screenshot](screenshot.png?raw=true)
 
+## GBDK.js Project
+
+Visit the [gbdkjs.com](https://www.gbdkjs.com) website for more information.
+
+[GBDK.js Documentation](https://www.gbdkjs.com/docs/)
+
+
 ## Dependencies
 
 - [Emscripten](http://kripken.github.io/emscripten-site/)

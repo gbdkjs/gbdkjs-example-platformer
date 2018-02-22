@@ -4,14 +4,6 @@
 void game_loop();
 void win();
 
-typedef union _sfixed {
-  struct {
-    UBYTE l;
-    BYTE h;
-  } b;
-  WORD w;
-} sfixed;
-
 UBYTE prev_joy;
 UBYTE time;
 fixed player_x;

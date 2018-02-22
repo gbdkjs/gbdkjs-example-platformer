@@ -1,4 +1,4 @@
-SHELL_FILE = node_modules/gbdkjs/shell_debug.html
+SHELL_FILE = node_modules/gbdkjs/shell_debug/build/index.html
 EMCC = emcc -O2 -Wno-implicit-function-declaration -Inode_modules/gbdkjs/include -Inode_modules/gbdkjs/gbdk/include -Iinclude --js-library node_modules/gbdkjs/emscripten_bindings.js
 CC = lcc -Wa-l -Wl-m -Wl-j -Wl-yt1 -Iinclude -Igenerated -Inode_modules/gbdkjs/include
 
@@ -33,7 +33,7 @@ $(ROM_BUILD_DIR)/%.gb:	$(OBJDIR)/%.o
 
 $(WEB_BUILD_DIR)/%.html:	$(OBJDIR)/%.bc
 	mkdir -p $(WEB_BUILD_DIR)
-	cp node_modules/gbdkjs/index.js $(WEB_BUILD_DIR)/gbdk.js
+	cp -r node_modules/gbdkjs/shell_debug/build/static $(WEB_BUILD_DIR)
 	$(EMCC) --shell-file $(SHELL_FILE) -s ASSERTIONS=1 -o $@ $^
 
 clean:

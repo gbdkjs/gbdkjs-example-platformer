@@ -9,6 +9,6 @@
   "author": "Chris Maltby",
   "license": "MIT",
   "dependencies": {
-    "gbdkjs": "^1.0.0"
+    "gbdkjs": "^2.0.0"
   }
 }
